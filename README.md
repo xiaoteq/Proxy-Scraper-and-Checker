@@ -4,7 +4,7 @@ Simple tools to find and check proxies.
 
 ## Support
 
-Join our Discord server for support and updates: [Discord Link](https://discord.gg/ZA2tcP82fq)
+Join our Discord server for support and updates: [Discord Link](https://discord.gg/jWdvghHGj7)
 
 ## Modules
 ### scraper.py
