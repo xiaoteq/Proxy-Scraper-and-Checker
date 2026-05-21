@@ -1,18 +1,10 @@
-# NGL Spammer
+# Proxy Scraper & Checker
 
-A Python tool to spam [NGL.link](https://ngl.link/) messages with proxies
+Tools to scrape and verify free proxies across multiple protocols.
 
 ## Screenshots
 
 ![1](./1.png)
-
-## Features
-
-- Concurrent multi-threading
-- Rate-limit bypass
-- Proxy-based requests
-- Dynamic device ID
-- Rotating User-Agent
 
 ## Installation
 
@@ -22,23 +14,12 @@ pip install -r requirements.txt
 
 ## Usage
 
-```bash
+Run `main.py` and select an option from the menu.
+
+```
 python main.py
 ```
-
-## Configuration
-
-- **`message.txt`**: Each line contains one message to send
-- **`proxy.txt`**: Each line contains a proxy in `ip:port` format
-
-## Proxy Collection
-
-You can use [Proxy-Scraper-And-Checker](https://github.com/xiaote0803/Proxy-Scraper-and-Checker) to fetch proxies for `proxy.txt`
 
 ## Support
 
 Join our Discord server for support and updates: [Discord Link](https://discord.gg/jWdvghHGj7)
-
-## Disclaimer
-
-This project is for educational purposes only. Use at your own risk. Users are responsible for complying with all applicable laws and terms of service.
