@@ -1,26 +1,43 @@
-# Proxy-Scraper-and-Checker
+# Proxy Scraper & Checker
 
-Simple tools to find and check proxies.
+Tools to scrape and verify free proxies across multiple protocols.
 
 ## Support
 
 Join our Discord server for support and updates: [Discord Link](https://discord.gg/jWdvghHGj7)
 
 ## Modules
+
 ### scraper.py
 
-- Gets proxies from websites and saves them to `proxies.txt`.
-  
+- Fetches proxies from 70+ sources concurrently.
+- Saves results to `<run_folder>/proxies/{http,https,socks4,socks5}.txt`.
+
 ### checker.py
 
-- Checks if proxies are available and writes available proxies to `working_proxies.txt`.
+- Validates each proxy with a live connection test.
+- Records country and city via geo lookup (ip-api.com).
+- Saves working proxies to `<run_folder>/working/{type}.txt`, `all.txt`, and `countries/{CC}.txt`.
+
+### main.py
+
+- Interactive menu to run scrape, check, or both together.
+- Manages settings (threads, timeout, proxy types).
+- Shows a table of recent run folders with proxy counts.
 
 ## Usage
 
-1. Run `scraper.py`; it builds `proxies.txt` and then starts `checker.py` for you.
-2. Wait for the check to finish and review `working_proxies.txt`. Run again if the network fails.
+1. Run `main.py` and select an option from the menu.
+2. Option 1 (Scrape then Check) runs the full pipeline automatically.
+3. Results are saved in a new timestamped folder each run.
 
-## Credits
+```
+python main.py
+```
 
-These tools are ones I found online and modified; I don't know who the original authors are.💀
+Alternatively, run each module standalone:
 
+```
+python scraper.py   # scrape only, then auto-launches checker
+python checker.py   # check only (reads from proxies/)
+```
