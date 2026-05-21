@@ -1,47 +1,44 @@
-# Proxy Scraper & Checker
+# NGL Spammer
 
-Tools to scrape and verify free proxies across multiple protocols.
+A Python tool to spam [NGL.link](https://ngl.link/) messages with proxies
 
 ## Screenshots
 
 ![1](./1.png)
 
-## Modules
+## Features
 
-### scraper.py
+- Concurrent multi-threading
+- Rate-limit bypass
+- Proxy-based requests
+- Dynamic device ID
+- Rotating User-Agent
 
-- Fetches proxies from 70+ sources concurrently.
-- Saves results to `<run_folder>/proxies/{http,https,socks4,socks5}.txt`.
+## Installation
 
-### checker.py
-
-- Validates each proxy with a live connection test.
-- Records country and city via geo lookup (ip-api.com).
-- Saves working proxies to `<run_folder>/working/{type}.txt`, `all.txt`, and `countries/{CC}.txt`.
-
-### main.py
-
-- Interactive menu to run scrape, check, or both together.
-- Manages settings (threads, timeout, proxy types).
-- Shows a table of recent run folders with proxy counts.
+```bash
+pip install -r requirements.txt
+```
 
 ## Usage
 
-1. Run `main.py` and select an option from the menu.
-2. Option 1 (Scrape then Check) runs the full pipeline automatically.
-3. Results are saved in a new timestamped folder each run.
-
-```
+```bash
 python main.py
 ```
 
-Alternatively, run each module standalone:
+## Configuration
 
-```
-python scraper.py   # scrape only, then auto-launches checker
-python checker.py   # check only (reads from proxies/)
-```
+- **`message.txt`**: Each line contains one message to send
+- **`proxy.txt`**: Each line contains a proxy in `ip:port` format
+
+## Proxy Collection
+
+You can use [Proxy-Scraper-And-Checker](https://github.com/xiaote0803/Proxy-Scraper-and-Checker) to fetch proxies for `proxy.txt`
 
 ## Support
 
 Join our Discord server for support and updates: [Discord Link](https://discord.gg/jWdvghHGj7)
+
+## Disclaimer
+
+This project is for educational purposes only. Use at your own risk. Users are responsible for complying with all applicable laws and terms of service.
