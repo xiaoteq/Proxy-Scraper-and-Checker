@@ -2,9 +2,9 @@
 
 Tools to scrape and verify free proxies across multiple protocols.
 
-## Support
+## Screenshots
 
-Join our Discord server for support and updates: [Discord Link](https://discord.gg/jWdvghHGj7)
+![1](./1.png)
 
 ## Modules
 
@@ -41,3 +41,7 @@ Alternatively, run each module standalone:
 python scraper.py   # scrape only, then auto-launches checker
 python checker.py   # check only (reads from proxies/)
 ```
+
+## Support
+
+Join our Discord server for support and updates: [Discord Link](https://discord.gg/jWdvghHGj7)
