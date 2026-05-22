@@ -1,4 +1,3 @@
-"""scraper.py — fetches proxies from 70+ sources, saves to output_dir/{type}.txt"""
 import os, sys, re, requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib3.exceptions import InsecureRequestWarning

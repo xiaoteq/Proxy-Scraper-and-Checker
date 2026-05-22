@@ -1,4 +1,3 @@
-"""main.py — Proxy Scraper & Checker interactive menu"""
 import os, sys, re, requests
 from datetime import datetime
 from rich.console import Console

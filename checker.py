@@ -1,4 +1,3 @@
-"""checker.py — validates proxies concurrently, saves results to output_dir/"""
 import os, sys, re, time, collections, requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from rich.console import Console, Group
