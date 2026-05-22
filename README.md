@@ -2,7 +2,7 @@
 
 Tools to scrape and verify free proxies across multiple protocols.
 
-## Screenshots
+## Showcase
 
 ![1](./1.png)
 
